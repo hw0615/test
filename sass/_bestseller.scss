@@ -1,0 +1,67 @@
+@import '_settings.scss';
+@import '_mixin';
+// bestseller 영역
+.bestseller{
+    padding-top: 29px;
+    h2{
+        margin: 0;
+        }
+    [class^=best-]{
+        height: 360px;
+        border: 1px solid #ddd;
+        margin-top: 16px;
+        padding: 0 20px;
+        }
+    :nth-child(2){
+        margin-left: 0;
+        }
+    :nth-child(5){
+        margin-right: 0;
+        }
+    .image-best{
+        padding-top: 20px;
+    }
+    .best-1, .best-2, .best-3, .best-4{
+        &:hover{
+            border: 1px solid #991717;
+        }
+    }
+    .best-text{
+        margin-top: 9px;
+        padding: 0;
+        border: transparent;
+        & p{
+            margin: 0;
+            line-height: 1.4;
+        }
+        & h3{
+            margin: 0;
+            padding-top: 15px;
+            font-size: 1.4rem;
+        }
+        & :nth-child(3){
+            padding-top: 22px;
+            color: #991717;
+            font-size: 1.75rem;
+        }
+    }
+    .heart.heart1{
+        float: right;
+        margin-top: 4px;
+        cursor: pointer;
+        background: transparent;
+        border: transparent;
+        background-image: url('../../images/icons/icons.svg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 0px -111px;
+        height: 15px;
+        width: 20px;
+        overflow: hidden;
+            &:focus{
+            background-image: url('../../images/icons/icons.svg');
+            background-repeat: no-repeat;
+            background-position: 0px -96px;
+            }
+    }
+}
